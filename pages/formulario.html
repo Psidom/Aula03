@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta lang="br">
     <meta charset="UTF-8">
     <title>Formulario</title>
 </head>
@@ -27,7 +28,7 @@
             </br>
             </br>
             <label for="cpf">CPF:</label>
-            <input type="number" name="cpf" id="cpf" min="11" max="11">
+            <input type="number" name="cpf" id="cpf" maxlength="11">
             </br>
             </br>
             <label for="sexo">Sexo:</label>
@@ -52,6 +53,14 @@
             <input type="checkbox" name="viagens" id="viagens">Viagens&nbsp;&nbsp;&nbsp;
             <input type="checkbox" name="Moda" id="Moda">Moda&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="checkbox" name="religiao" id="religiao">Religião&nbsp;&nbsp;
+            </br>
+            </br>
+            <label for="cor">Cor Favorita:</label>
+            <input type="color" name="cor" id="cor">
+            </br>
+            </br>
+            <label for="curriculo">Anexe Seu Curriculo Aqui</label>&nbsp;
+            <input type="file" name="curriculo" id="curriculo" value="Anexo">
             </br>
             </br>
             <input type="submit" onclick="alert('Eu, Sou o Batman')" value="Enviar">
