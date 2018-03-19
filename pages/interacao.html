@@ -13,12 +13,16 @@
 <body>
     <script>
         var valor = prompt("Qual a sua idade ?");
-        if ((valor >= 60) || (valor < 18 && valor >= 16)) {
-            document.write("Você não é obrigado a votar");
-        } else if (valor <= 15) {
-            document.write("Você não pode votar");
+        if (valor != null) {
+            if ((valor >= 60) || (valor < 18 && valor >= 16)) {
+                document.write("Você não é obrigado a votar");
+            } else if (valor <= 15) {
+                document.write("Você não pode votar");
+            } else {
+                document.write("Você é obrigado a votar");
+            }
         } else {
-            document.write("Você é obrigado a votar");
+            alert('CAMPOS VAZIOS');
         }
     </script>
 </body>
